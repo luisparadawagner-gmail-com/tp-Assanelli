@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mi-app"
+    }
+  },
+  "defaultProject": "mi-app",
+  "cli": {
+    "analytics": "75bb1c5a-d8a8-4af0-90fd-2589a8efe81f"
+  }
 }
