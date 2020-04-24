@@ -20,5 +20,17 @@ Edad: <input type="number" [formControl]="edadControl"> -->
         <input type="number" formControlName="edad">
     </label>
 
+    <div formArrayName="telefonos">
+        <h3>Telefonos</h3>
+        <button (click)="agregarTelefono()">Agregar Telefono</button>
+
+        <div *ngFor="let telefono of telefonos.controls; let i = index">
+            <label>
+                Telefono <input type="text" [formControlName]="i">
+            </label>
+        </div>
+    </div>
+
+    Status Formulario: {{personaForm.status}}
     <button type="submit">Guardar</button>
 </form>
