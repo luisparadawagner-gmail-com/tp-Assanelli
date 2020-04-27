@@ -37,7 +37,7 @@ export class tallerComponent {
                 yacimiento: '',
                 nroPozo: '',
             },
-            faltantes: [''],
+            faltantes: this.faltantes.value,
         });
 
     }
